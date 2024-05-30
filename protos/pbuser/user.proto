@@ -1,0 +1,36 @@
+syntax = "proto3";
+package pbuser;
+option go_package="goserver/protos";
+
+message reqJoin{
+    string id=1;
+    string pw=2;
+}
+message resJoin{
+    bool state=1;
+}
+
+service ServiceJoin{
+    rpc Join(reqJoin) returns (resJoin);
+}
+
+message reqLogin{
+    string id=1;
+    string pw=2;
+}
+message resLogin{
+    bool state=1;
+}
+service ServiceLogin{
+    rpc Login(reqLogin) returns (resLogin);
+}
+
+message reqInfo{
+    string id=1;
+}
+message resInfo{
+    string id=1;
+}
+service ServiceInfo{
+    rpc Info(reqInfo) returns (resInfo);
+}

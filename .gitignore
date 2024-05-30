@@ -1,0 +1,36 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.out
+*.test
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Go modules
+go.sum
+
+# Log files
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Build directories
+bin/
+build/
+dist/
+
+# gRPC generated files (optional, if you prefer not to include them in the repo)
+# Comment this out if you want to include the generated files in your repository
+# proto/*.pb.go
